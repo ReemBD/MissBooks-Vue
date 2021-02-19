@@ -1,0 +1,15 @@
+.side-dock {
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 20px;
+    top: 130px;
+    border-radius: 50px;
+    background-color: #d3d3d3;
+    &-btn {
+        width: 80px !important;
+        height: 80px !important;
+    }
+}

@@ -1,0 +1,23 @@
+//setup
+@import "./setup/variables";
+@import "./setup/typography";
+
+//basic
+
+@import "./basic/helpers";
+@import "./basic/base.scss";
+@import "./basic/layouts.scss";
+@import "./basic/buttons";
+
+//cmps
+
+@import "./cmps/BookList";
+@import "./cmps/BookPreview";
+@import "./cmps/AppHeader";
+@import "./cmps/ReviewPreview";
+@import "./cmps/ChatApp";
+@import "./cmps/Popup";
+@import "./cmps/SideDock";
+//views
+@import "./views/BookApp";
+@import "./views/BookDetails";

@@ -1,0 +1,71 @@
+.book-details-container {
+    padding-top: $navbar-padding;
+    margin-top: 30px;
+    gap: 40px;
+    .book-details {
+        flex-basis: 60%;
+    }
+    .title {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        color: $sub-font-clr;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .price {
+        margin-bottom: 20px;
+    }
+
+    .go-back-btn {
+        margin: 0 0 20px -10px;
+    }
+
+    .labels {
+        margin: 15px 10px 10px 0;
+        & > * {
+            padding: 10px;
+            margin-inline-end: 20px;
+            text-transform: uppercase;
+            border-radius: 3px;
+            // font-family: reggae;
+            font-weight: 600;
+            font-size: 0.8em;
+        }
+
+        @for $i from 1 through 3 {
+            .reading-label.color-#{$i} {
+                background-color: darken(rgb(226, 226, 19), 3 * $i);
+            }
+        }
+
+        .sale-label {
+            background-color: rgb(121, 212, 121);
+        }
+    }
+
+    .review-add {
+        flex-basis: 40%;
+        &-form {
+            input,
+            select,
+            textarea {
+                font-family: roboto;
+                margin-bottom: 20px;
+                &::placeholder {
+                    font-family: roboto;
+                }
+            }
+        }
+        .title {
+            margin-bottom: 30px;
+            text-transform: none;
+        }
+
+        .submit-review-btn {
+            align-self: flex-start;
+        }
+    }
+}

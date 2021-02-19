@@ -1,0 +1,16 @@
+.app-header {
+    background-color: #f875aa;
+    font-family: Reggae;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    .logo {
+        font-size: 2em;
+    }
+
+    .router-link,
+    a {
+        color: #fff !important;
+    }
+}
